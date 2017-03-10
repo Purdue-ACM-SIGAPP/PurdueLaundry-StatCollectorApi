@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170310001220) do
+ActiveRecord::Schema.define(version: 20170310003832) do
+
+  create_table "machine_stats", force: :cascade do |t|
+    t.date     "time"
+    t.string   "state"
+    t.integer  "timeLeft"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "machines", force: :cascade do |t|
     t.string   "name"
