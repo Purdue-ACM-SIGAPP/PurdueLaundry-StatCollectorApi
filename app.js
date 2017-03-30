@@ -5,7 +5,7 @@ var logger = require('morgan');
 var bodyParser = require('body-parser');
 require('dotenv').config();
 
-var index = require('./routes/index';
+var index = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
